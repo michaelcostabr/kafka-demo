@@ -1,0 +1,17 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "BootstrapServers": "localhost:9092",
+    "SaslMechanism": "Plain",
+    "SecurityProtocol": "SaslSsl",
+    "SaslUsername": "ALTERAR USUARIO BROKER AQUI",
+    "SaslPassword": "ALTERAR SENHA BROKER AQUI",
+    //"SslCaLocation": "/Users/michael/repos/kafka-demo/producer/cacert.pem",
+    "SchemaRegistryUrl": "https://localhost.cloud",
+    "SchemaRegistryRequestTimeoutMs": 5000,
+    "SchemaRegistryMaxCachedSchemas": 10,
+    "SchemaRegistryBasicAuthUserInfo": "ALTERAR USUARIO REGISTRY AQUI:ALTERAR SENHA BROKER AQUI"
+  }
+}

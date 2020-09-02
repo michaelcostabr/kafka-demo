@@ -1,0 +1,89 @@
+﻿{
+  "name": "Streaming.Pokemon.PlayerAction",
+  "type": "record",
+  "namespace": "com.michael.avro",
+  "doc": "Schema para telemetria da demo do kafka, em um simnples jogo",
+  "fields": [
+    {
+      "name": "Timestamp",
+      "type": "long"
+    },
+    {
+      "name": "Player",
+      "type": {
+        "name": "Player",
+        "type": "record",
+        "fields": [
+          {
+            "name": "PlayerID",
+            "type": "string"
+          },
+          {
+            "name": "PlayerName",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Walk",
+      "type": {
+        "name": "Walk",
+        "type": "record",
+        "fields": [
+          {
+            "name": "From",
+            "type": {
+              "name": "From",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "Lat",
+                  "type": "string"
+                },
+                {
+                  "name": "Long",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          {
+            "name": "To",
+            "type": {
+              "name": "To",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "Lat",
+                  "type": "string"
+                },
+                {
+                  "name": "Long",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Distance",
+            "type": "int"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Score",
+      "type": {
+        "name": "Score",
+        "type": "record",
+        "fields": [
+          {
+            "name": "ScoredPoints",
+            "type": "int"
+          }
+        ]
+      }
+    }
+  ]
+}
