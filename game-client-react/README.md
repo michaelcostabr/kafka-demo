@@ -1,3 +1,8 @@
+## O que é?
+
+Game de encontrar e descobrir Pokémons, que gera telemetria a ser capturada e processada em tempo real pelo Kafka Streams
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
